@@ -19,15 +19,15 @@ private fun attackEffectiveness(attackingPokemon: Int, pokemonDefense: Int):Doub
     if(attackingPokemon==pokemonDefense){ damage= 0.5}
     if(attackingPokemon==(typeOfPokemon.Water.pokemon) && pokemonDefense==(typeOfPokemon.Fire.pokemon)) {damage= 2.0}
     if(attackingPokemon==(typeOfPokemon.Water.pokemon) && pokemonDefense==(typeOfPokemon.Plant.pokemon)) {damage= 0.5}
-    if(attackingPokemon==(typeOfPokemon.Water.pokemon) && pokemonDefense==(typeOfPokemon.Electricity.pokemon)) {damage= 0.0}
+    if(attackingPokemon==(typeOfPokemon.Water.pokemon) && pokemonDefense==(typeOfPokemon.Electricity.pokemon)) {damage= 1.0}
     if(attackingPokemon==(typeOfPokemon.Fire.pokemon) && pokemonDefense==(typeOfPokemon.Water.pokemon)) {damage= 0.5}
     if(attackingPokemon==(typeOfPokemon.Fire.pokemon) && pokemonDefense==(typeOfPokemon.Plant.pokemon)){ damage= 2.0}
-    if(attackingPokemon==(typeOfPokemon.Fire.pokemon) && pokemonDefense==(typeOfPokemon.Electricity.pokemon)){ damage= 0.0}
+    if(attackingPokemon==(typeOfPokemon.Fire.pokemon) && pokemonDefense==(typeOfPokemon.Electricity.pokemon)){ damage= 1.0}
     if(attackingPokemon==(typeOfPokemon.Plant.pokemon) && pokemonDefense==(typeOfPokemon.Water.pokemon)) {damage= 2.0}
     if(attackingPokemon==(typeOfPokemon.Plant.pokemon) && pokemonDefense==(typeOfPokemon.Fire.pokemon)) {damage= 0.5}
-    if(attackingPokemon==(typeOfPokemon.Plant.pokemon) && pokemonDefense==(typeOfPokemon.Electricity.pokemon)) {damage= 0.0}
-    if(attackingPokemon==(typeOfPokemon.Electricity.pokemon) && pokemonDefense==(typeOfPokemon.Water.pokemon)) {damage= 0.0}
-    if(attackingPokemon==(typeOfPokemon.Electricity.pokemon) && pokemonDefense==(typeOfPokemon.Fire.pokemon)) {damage= 0.0}
+    if(attackingPokemon==(typeOfPokemon.Plant.pokemon) && pokemonDefense==(typeOfPokemon.Electricity.pokemon)) {damage= 1.0}
+    if(attackingPokemon==(typeOfPokemon.Electricity.pokemon) && pokemonDefense==(typeOfPokemon.Water.pokemon)) {damage= 1.0}
+    if(attackingPokemon==(typeOfPokemon.Electricity.pokemon) && pokemonDefense==(typeOfPokemon.Fire.pokemon)) {damage= 1.0}
     if(attackingPokemon==(typeOfPokemon.Electricity.pokemon) && pokemonDefense==(typeOfPokemon.Plant.pokemon)) {damage= 0.5}
     return damage
 }
